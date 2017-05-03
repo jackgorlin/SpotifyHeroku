@@ -1,0 +1,183 @@
+.content-div{
+	font-family: "Proxima Nova";
+	background-color: rgba(255, 75, 150, .9);
+	text-align: left;
+	padding-bottom: 25px;
+	padding-top: 25px;
+  -moz-box-shadow:3px 3px 3px  lightblue;
+  -webkit-box-shadow:3px 3px 3px  lightblue;
+  box-shadow:3px 3px 3px  lightblue; 
+}
+
+#title{
+	font-family: "Proxima Nova";
+	text-align: center;
+	text-decoration: bold;
+	font-size: 50px;
+	padding-top: 25px;
+	padding-bottom: 2%;
+}
+
+#item{
+	color: rgb(102, 255,255);
+	border-bottom: 2px;
+	border-bottom-style: solid;
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+
+#sectionTitle {
+	text-align: center;
+	font-size:25px;
+}
+
+.cover {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  background-size: cover;
+  float: top
+  -moz-box-shadow:0 0 8px 0 grey;
+  -webkit-box-shadow:3px 3px 3px 0 red;
+  box-shadow:3px 3px 3px 0 red; 
+}
+
+#login-title{
+	margin-top: 20%;
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: "Proxima Nova";
+  color: white;
+  font-size: 55px;
+}
+
+#login-button{
+	display: table;
+  margin: 0 auto;
+  font-family: "Proxima Nova";
+  background-color: lightblue;
+  color: black;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#container {
+	text-decoration: center;
+}
+
+.row {
+	display: flex;
+}
+
+#logo {
+	width: 250px;
+	display: block;
+  margin: 0 auto;
+  padding-top: 220px;
+}
+
+#arrow {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#arrow:hover{
+  width: 175px;
+}
+
+a[id="nav1"]:target ~ #main.container{
+  -webkit-transform: translateY( -1000px );
+  transform: translateY( -1000px );
+}
+
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Proxima Nova";
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+  background-size: cover;
+}
+section.module.parallax {
+  height: 700px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+	color: rgba(255, 75, 150, .9);
+  font-size: 48px;
+  line-height: 650px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+/*  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px #ff0000;*/
+  text-shadow: 3px 3px 3px  lightblue; 
+  word-wrap: break-word;
+}
+
+
+section.module.parallax-1 {
+/*  background-image: url('/img/image13.jpg');*/
+}
+section.module.parallax-2 {
+  background-image: url('/img/image5.jpg');
+}
+section.module.content-1 {
+/*  background-image: url('/img/image3.jpg');*/
+}
+section.module.parallax-3 {
+  background-image: url('/img/image2.jpg');
+}
+section.module.content-2 {
+/*  background-image: url('/img/image4.jpg');*/
+}
+section.module.parallax-4 {
+      background-image: url("/img/image.jpg");
+}
+
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
